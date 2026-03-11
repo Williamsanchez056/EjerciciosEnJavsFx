@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="GestionProducto.Controller">
+
+  <children>
+
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu text="File">
+          <items>
+            <MenuItem text="New"/>
+            <MenuItem text="Open"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Quit"/>
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+
+    <AnchorPane VBox.vgrow="ALWAYS">
+
+      <children>
+
+        <Text layoutX="14" layoutY="27" text="Nombre">
+          <font>
+            <Font size="18"/>
+          </font>
+        </Text>
+
+        <TextField fx:id="txtNombre" layoutX="91" layoutY="7"/>
+
+        <Text layoutX="14" layoutY="72" text="Precio">
+          <font>
+            <Font size="18"/>
+          </font>
+        </Text>
+
+        <TextField fx:id="txtPrecio" layoutX="91" layoutY="52"/>
+
+        <Text layoutX="14" layoutY="114" text="Cantidad">
+          <font>
+            <Font size="18"/>
+          </font>
+        </Text>
+
+        <TextField fx:id="txtCantidad" layoutX="91" layoutY="95"/>
+
+        <Button
+                layoutX="309"
+                layoutY="64"
+                text="Agregar"
+                onAction="#agregarProducto"/>
+
+        <TableView fx:id="tabla"
+                   layoutX="162"
+                   layoutY="152"
+                   prefHeight="200"
+                   prefWidth="351">
+
+          <columns>
+
+            <TableColumn fx:id="colNombre"
+                         text="Nombre"
+                         prefWidth="120"/>
+
+            <TableColumn fx:id="colPrecio"
+                         text="Precio"
+                         prefWidth="100"/>
+
+            <TableColumn fx:id="colCantidad"
+                         text="Cantidad"
+                         prefWidth="100"/>
+
+          </columns>
+
+        </TableView>
+
+        <Button
+                layoutX="49"
+                layoutY="226"
+                text="Eliminar Fila"
+                onAction="#eliminarProducto"/>
+
+        <Label fx:id="lblError"
+               layoutX="91"
+               layoutY="125"
+               textFill="red"/>
+
+      </children>
+
+    </AnchorPane>
+
+  </children>
+
+</VBox>
