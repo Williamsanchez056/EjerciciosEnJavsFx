@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "version": "0.2.0",
     "configurations": [
         {
@@ -8,18 +7,6 @@
             "request": "launch",
             "mainClass": "GestionProducto.Main",
             "vmArgs": "--module-path \"C:\\Users\\Willy\\OneDrive\\Escritorio\\javafx-sdk-25.0.2\\lib\" --add-modules javafx.controls,javafx.fxml"
-=======
-
-    "version": "0.2.0",
-    "configurations": [
-
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "view.Main",
-            "vmArgs": "--module-path \"C:/Users/Willy/OneDrive/Escritorio/javafx-sdk-25.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
->>>>>>> b2537ae94c0e6271880b8126f57e9ecf29c28810
         }
     ]
 }
